@@ -1,0 +1,251 @@
+body {
+	font-family: sans-serif;
+	font-weight: 600;
+	display    : flex;
+	min-height : 100vh;
+	margin     : 0 auto;
+	padding    : 0 auto;
+	overflow   : hidden;
+}
+
+img {
+	width  : 100%;
+	opacity: 1.0;
+}
+
+nav {
+	margin     : 0 auto;
+	margin-left: 20px;
+	padding    : 0 auto;
+	margin-top : 50px;
+}
+
+ul {
+	text-align          : left;
+	padding-inline-start: 0px;
+	margin              : 10px 0;
+	margin-bottom       : 53px;
+
+}
+
+li {
+	list-style   : none;
+	margin-bottom: 17px;
+	font-weight  : bold;
+	font-size    : 17px;
+}
+
+li img {
+	width   : 30px;
+	margin  : 0 auto;
+	position: relative;
+}
+
+main {
+	margin    : 0;
+	padding   : auto;
+	width     : 100%;
+	height    : 100vh;
+	background: #fff;
+	overflow  : scroll;
+	overflow-x: hidden;
+}
+
+main::-webkit-scrollbar {
+	width: 10px;
+}
+
+main::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background   : #000;
+}
+
+.main-title p {
+	padding-bottom:-2px;
+}
+
+aside {
+	color         : black;
+	margin        : 0;
+	padding       : 0 10px;
+	width         : 270px;
+	display       : flex;
+	flex-direction: column;
+	background    : #f2f2f2;
+	height        : 100vh;
+	z-index       : 100;
+	top           : 0;
+	position      : sticky;
+	overflow      : scroll;
+	overflow-x    : hidden;
+}
+
+aside::-webkit-scrollbar {
+	width: 3px;
+}
+
+aside::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background   : #000;
+}
+
+i {
+	margin-right: 20px;
+}
+
+aside a:hover {
+	opacity: 0.5;
+}
+
+aside a:active {
+	opacity: 0.8;
+}
+
+aside a {
+	text-decoration: none;
+	color          : #000;
+	cursor         : pointer;
+}
+
+.scroll {
+	width     : 180px;
+	overflow  : scroll;
+	overflow-x: hidden;
+	height    : 41vh;
+	min-height: 10px;
+	margin    : 0 auto;
+}
+
+.scroll ul {
+	margin: 0 auto;
+}
+
+.scroll::-webkit-scrollbar {
+	width: 3px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	background   : #000;
+}
+
+.side-icon {
+	margin    : 0 auto;
+	margin-top: 30px;
+	display   : flex;
+	cursor    : default
+}
+
+.side-icon img {
+	width       : 30px;
+	height      : auto;
+	margin      : 0 auto;
+	margin-right: 10px;
+	filter      : invert(100%);
+}
+
+.main-title {
+	margin-top: auto;
+}
+
+.main-title .title {
+	font-size: 18px;
+	margin   : 0 auto;
+}
+
+.main-title .sub-title {
+	margin   : 0 auto;
+	font-size: 3px;
+}
+
+.sns-icon {
+	display       : flex;
+	flex-direction: column;
+	margin-top    : auto;
+	margin-left   : 20px;
+	height        : 150px;
+}
+
+.sns-icon ul {
+	display       : flex;
+	flex-direction: column;
+	margin-top    : 30px;
+	height        : 150px;
+}
+
+.footer {
+	text-align: center;
+	height    : 40px;
+}
+
+.newullist {
+	width          : 100%;
+	margin         : 0 auto;
+	display        : flex;
+	flex-flow      : row wrap;
+	justify-content: flex-start;
+}
+
+.newlist {
+	width        : 288px;
+	cursor       : default;
+	margin       : 21px 21px;
+	margin-bottom: 25px;
+	height       : auto;
+	position     : relative;
+}
+
+.newlist a {
+	font-size: 15px;
+}
+
+.newlist img {
+	width : 288px;
+	height: 162px;
+}
+
+.cate-bt {
+	margin        : 0;
+	display       : flex;
+	flex-wrap     : wrap;
+	position      : absolute;
+	top           : 1%;
+	left          : 1%;
+	opacity       : 0;
+	pointer-events: none;
+}
+
+.cate-bg {
+	display        : flex;
+	align-items    : center;
+	justify-content: center;
+	background     : #f2f2f2;
+	height         : 18px;
+	margin         : 3px;
+	border-radius  : 7%;
+}
+
+.newlist a:hover+.cate-bt {
+	opacity   : 1;
+	transition: 0.3s;
+}
+
+.cate-bg p {
+	font-weight: bold;
+	margin     : 0 6px;
+	color      : #000;
+	font-size  : 13px;
+}
+
+h3 {
+	margin-top: 6px;
+	margin    : 0;
+	padding   : 0;
+}
+
+h3 a {
+	font-size      : 16px;
+	opacity        : 1.0;
+	text-decoration: none;
+	color          : black;
+}
